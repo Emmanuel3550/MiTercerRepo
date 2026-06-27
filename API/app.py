@@ -15,10 +15,12 @@ def get_superheroes():
     rows = ["Superman", "Batman", "Flash", "Linterna Verde", "Mujer maravilla", "Aquaman", "Shazam", "Cyborg"]
     return rows
 
+
 @app.get("/superheroesMarvel")
 def get_superheroes_marvel():
     rows = ["Spider-Man", "Iron Man", "Thor", "Hulk", "Black Widow", "Doctor Strange", "Black Panther", "Captain America"]
     return rows
+
 
 @app.get("/LOTRWarriors")
 def get_lotr_warriors():
@@ -33,4 +35,9 @@ def get_starwars_warriors():
 @app.get("/warriorsGOT")
 def get_warriors_got():
     rows = ["Jon Snow", "Daenerys Targaryen", "Arya Stark", "Tyrion Lannister", "Cersei Lannister", "Jaime Lannister", "Bran Stark", "Sansa Stark"]
+    return rows
+
+@app.get("/emmanuelhobbies")
+def get_emmanuel_hobbies():
+    rows = ["Leer", "Escribir", "Programar", "Jugar videojuegos", "Ver películas", "Escuchar música", "Hacer ejercicio", "Cocinar"]
     return rows
